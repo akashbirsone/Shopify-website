@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="nav-bar">
+
+            <div class="menu-icon" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Sidebar Start -->
+            <div class="sidebar" id="sidebar">
+                <div class="top-bar">
+                    Login & Signup
+                    <span class="close-btn" onclick="toggleSidebar()">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+
+                <ul>
+                    <li>⭐ Flipkart Plus Zone</li>
+                    <li>📂 All Categories</li>
+                    <li>🔥 Offer Zone</li>
+                    <li>🛒 Sell on Flipkart</li>
+                    <li>📦 My Orders</li>
+                    <li>🛍 My Cart</li>
+                    <li>💖 My Wishlist</li>
+                   <a href="login-page.html"><li>👤 My Account</li></a>  
+                    <li>🔔 My Notifications</li>
+                    <li>❓ Help Centre</li>
+                </ul>
+            </div>
+
+            <!-- Overlay -->
+            <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+
+            <div class="logo">
+                <a href="#">Shopify</a>
+            </div>
+
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa fa-search "></i>
+                    <input type="search" name="search" placeholder="Search for product, Brands and More">
+                </div>
+            </div>
+
+            <div class="login-btn">
+                <a href="login-page.html">
+                    <div class="login-icon">
+                        <i class="fa fa-user-circle"></i>
+                        <span>Login</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="shopping-cart">
+                <div class="shopping-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+
+            <div class="material-store">
+                <i class="fa-solid fa-store"></i>
+                <span>Become a Seller</span>
+            </div>
+
+            <div class="helping-icon">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Banner Section  -->
+
+    <div class="top-banner">
+        <div class="product-banner">
+            <img src="Project asset/klios.webp" alt="Klios">
+            <p>Klios</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/Mobile.webp" alt="mobile">
+            <p>Moblie</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/fashion.png" alt="fashion">
+            <p>Fashion</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/Electronic.png" alt="Electronic">
+            <p>Electronic</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/furniture.png" alt="Home & furniture ">
+            <p>Home & furniture</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/laptops.png" alt="Appliances">
+            <p>Appliances</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/toys.png" alt="Flight Bookings">
+            <p>Beauty, Toys & More</p>
+        </div>
+        <div class="product-banner">
+            <img src="Project asset/flight.png" alt="Beauty, Toys & More">
+            <p>Flight Bookings</p>
+        </div>
+    </div>
+
+    <!-- this is a slider section  -->
+    <div class="main-slider">
+        <div class="slider">
+            <div class="slider-img" id="sliderImages">
+                <img src="Project asset/t-shirt.png" alt="">
+                <img src="Project asset/hero_image.png.jpg" alt="">
+                <img src="Project asset/mobile.png" alt="">
+                <img src="Project asset/makeup.png" alt="">
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)"> ❮ <button>
+                    <button class="next" onclick="changeSlide(1)"> ❯ </button>
+        </div>
+    </div>
+    <!-- these are card section  -->
+
+    <div class="card-container" id="card-box-1">
+        <div class="card-product-container">
+            <div class="card-product">
+                <h2>Hot Deals on Fashion</h2>
+            </div>
+            <div class="card-product-box">
+                <div class="card-product-img">
+                    <img src="Project asset/styling watch.jpeg" alt="">
+                    <p>Watches</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/men combo" alt="">
+                    <p>Men' Boxers</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/men corsac" alt="">
+                    <p>Men's Shoes</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/women backpack" alt="">
+                    <p>Backpacks</p>
+                </div>
+            </div>
+            <span class="span-text">See more</span>
+        </div>
+
+        <div class="card-product-container" id="appliance-cool">
+            <div class="card-product">
+                <h2 class="card-heading"> Appliance for Cool Summer </h2>
+            </div>
+            <div class="card-product-box">
+                <div class="card-product-img">
+                    <img src="Project asset/camera-drone" alt="">
+                    <p>Cameras</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/fan" alt="">
+                    <p>Fans</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/wireless headphone.jpeg" alt="">
+                    <p>Wireless Headphone</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Project asset/music-playing" alt="">
+                    <p>Party Speaker</p>
+                </div>
+            </div>
+            <span class="span-text">See more</span>
+        </div>
+
+        <div class="card-product-container" id="card-product">
+            <div class="card-product">
+                <h2 class="card-heading">Appliances for your home</h2>
+            </div>
+            <div class="card-product-box">
+                <div class="card-product-img">
+                    <img src="Asset/Appliances.png" alt="">
+                    <p>Air conditioners</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/boat.png" alt="">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/boult.png" alt="">
+                    <p>Microwaves</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/washing machin.png" alt="">
+                    <p>Washing </p>
+                </div>
+            </div>
+            <span class="span-text">See more</span>
+        </div>
+
+        <div class="card-product-container" id="card-product-section">
+            <div class="card-product">
+                <h2 class="card-heading">Appliances for your home</h2>
+            </div>
+            <div class="card-product-box">
+                <div class="card-product-img">
+                    <img src="Asset/Appliances.png" alt="">
+                    <p>Air conditioners</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/boat.png" alt="">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/boult.png" alt="">
+                    <p>Microwaves</p>
+                </div>
+                <div class="card-product-img">
+                    <img src="Asset/washing machin.png" alt="">
+                    <p>Washing </p>
+                </div>
+            </div>
+            <span class="span-text">See more</span>
+        </div>
+    </div>
+
+    <!-- this is a Best of Electronic products  -->
+
+    <div class="shop-deals-section">
+        <div class="section-shop-deals-container">
+            <div class="shopping-container">
+                <h3>Best of Electronic's</h3>
+            </div>
+            <div class="shop-deals" id="carousel-track">
+                <a href="product-details.html"></a>
+                <div class="shop-deals-img">
+                    <img src="Project asset/watch" alt="">
+                    <span>Smartwatch</span>
+                    <span class="offers">From $1,399</span>
+                </div>
+                </a>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/moto" alt="">
+                    <span>Motorola</span>
+                    <span class="offers">From $16,999</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/pc monitor" alt="">
+                    <span>monitor</span>
+                    <span class="offers">From $6599</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/projector" alt="">
+                    <span>projector</span>
+                    <span class="offers">From $6990</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/printer" alt="">
+                    <span>printers</span>
+                    <span class="offers">From $10190</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/sandisk" alt="">
+                    <span>sandisk Extreme..</span>
+                    <span class="offers">From $5,799</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Asset/nord-buds.png" alt="">
+                    <span>Best Truewireless..</span>
+                    <span class="offers">From$1,099</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Asset/headphone.png" alt="">
+                    <span>sandisk Extreme..</span>
+                    <span class="offers">From $5,799</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/watch" alt="">
+                    <span>Fastrack Smartwatch</span>
+                    <span class="offers">From $1,399</span>
+                </div>
+
+                <div class="shop-deals-img">
+                    <img src="Project asset/watch" alt="">
+                    <span>Fastrack Smartwatch</span>
+                    <span class="offers">From $1,399</span>
+                </div>
+
+                  <div class="shop-deals-img">
+                    <img src="Project asset/watch" alt="">
+                    <span>Fastrack Smartwatch</span>
+                    <span class="offers">From $1,399</span>
+                </div>
+
+                  <div class="shop-deals-img">
+                    <img src="Project asset/watch" alt="">
+                    <span>Fastrack Smartwatch</span>
+                    <span class="offers">From $1,399</span>
+                </div>
+
+                <button class="btn-1" onclick="changeSlide(-1)"> ❮ <button>
+                        <button class="btn-2" onclick="changeSlide(1)"> ❯ </button>
+            </div>
+        </div>
+    </div>
+    <div class="side-banner">
+        <img src="Asset/air plan.png" alt="">
+    </div>
+
+    <!-- this is a beauty foor of toys items  -->
+
+    <div class="product-container">
+        <div class="product-section">
+            <div class="product-heading">
+                <h3>Top Offers</h3>
+            </div>
+            <div class="product-deals" id="product-carousel">
+                <a href="product-details.html?name=boy-girls&image-images/product1.jpg&price=min.30%off">
+                    <div class="product-img">
+                        <img src="Project asset/5-6-years" alt="">
+                        <span class="title" >Fashion dress </span>
+                        <span class="offer" id="product-price">From 999</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=water-bottle&image=images/product2.jpg&price=min.50%off">
+                    <div class="product-img">
+                        <img src="Project asset/water-bottel" alt="">
+                        <span class="title">Water Bottles</span>
+                        <span class="offer">Min. 50% Off</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=vero-moda&image=images/product3.jpg&price=min.60-90%off">
+                    <div class="product-img">
+                        <img src="Project asset/w-dress" alt="">
+                        <span class="title">Vero Moda</span>
+                        <span class="offer">60-90% Off</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=wall clocks&image=images/product4.jpg&price=min.50%off">
+                    <div class="product-img">
+                        <img src="Project asset/clock" alt="">
+                        <span class="title">Wall Clocks</span>
+                        <span class="offer">Min. 50% Off</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=pendrive & SD Cards&image=imamges/product5.jpg&price=from $329">
+                    <div class="product-img">
+                        <img src="Project asset/hp-pendrive" alt="">
+                        <span class="title">Pendrive & SD Cards</span>
+                        <span class="offer">From $329</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=cycles&image=images/product6.jpg&price=min.50%off">
+                    <div class="product-img">
+                        <img src="Project asset/cycle" alt="">
+                        <span class="title">Cycles</span>
+                        <span class="offer">Min. 50% Off</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=Air-Coolers&image=images/product7.jpg&price=min.50% off">
+                    <div class="product-img">
+                        <img src="Project asset/air-cooler" alt="">
+                        <span class="title">Air Coolers</span>
+                        <span class="offer">Min. 50% Off</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=hottest-steals&image-images/product8.jpg&price=499.only">
+                    <div class="product-img">
+                        <img src="Project asset/hottest-style" alt="">
+                        <span class="title">Hottest steals</span>
+                        <span class="offer">Under $499</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=hottest-steals&image-images/product8.jpg&price=499.only">
+                    <div class="product-img">
+                        <img src="Project asset/hottest-style" alt="">
+                        <span class="title">Hottest steals</span>
+                        <span class="offer">Under $499</span>
+                    </div>
+                </a>
+
+                <a href="product-details.html?name=hottest-steals&image-images/product8.jpg&price=499.only">
+                    <div class="product-img">
+                        <img src="Project asset/hottest-style" alt="">
+                        <span class="title">Hottest steals</span>
+                        <span class="offer">Under $499</span>
+                    </div>
+                </a>
+                <button class="product-btn-1" onclick="scrollProducts(-1)"> ❮ <button>
+                <button class="product-btn-2" onclick="scrollProducts(1)"> ❯ </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- this is 499 offer code  -->
+
+    <div class="section">
+        <h2>New Sesson Top Deals 😍</h2>
+
+        <a href="">
+            <div class="item">
+                <img src="Project asset/woman-kurta-set" alt="Flats">
+                <div class="item-text">
+                    <h4>Kurta sets </h4>
+                    <p>Under ₹349</p>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="item">
+                <img src="Project asset/combo-keyboard-mouse" alt="Sports Shoes">
+                <div class="item-text">
+                    <h4> Laptop Accessories</h4>
+                    <p>Under ₹149</p>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="item">
+                <img src="Project asset/women backpack" alt="PUMA">
+                <div class="item-text">
+                    <h4>Laptop Backpack</h4>
+                    <p>Under ₹339</p>
+                </div>
+                <div class="arrow">➔</div>
+            </div>
+        </a>
+
+        <a href=""> 
+        <div class="item">
+            <img src=" Project asset/men-shoes" alt="Tokyo Talkies">
+            <div class="item-text">
+                <h4>Men's Casual Shoes</h4>
+                <p>Under ₹499</p>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+        </a>
+
+        <div class="item">
+            <img src="Project asset/shop-now" alt="Top Rated Styles">
+            <div class="item-text">
+                <h4>Home Essentials</h4>
+                <p>Under ₹10,290</p>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="item">
+            <img src="Project asset/toy-and-game " alt="USPA, Levi's">
+            <div class="item-text">
+                <h4>kick Scooter</h4>
+                <p>Under ₹899</p>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="item">
+            <img src="Project asset/college-bag " alt="Hottest Steals">
+            <div class="item-text">
+                <h4>Hottest steals</h4>
+                <p>Under ₹499</p>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="item">
+            <img src=" Project asset/college-bag" alt="Ethnic Wear">
+            <div class="item-text">
+                <h4>Boy's & Girl's Ethnic Wear</h4>
+                <p>Under ₹499</p>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+    </div>
+
+    <!-- this button is moved bottom to Top  -->
+    <button class="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- this is footer it is information compay details Etc  -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+                <p>Contact Us</p>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Flipkart Stories</p>
+                <p>Press</p>
+            </div>
+            <div class="footer-column">
+                <h3>HELP</h3>
+                <p>Payments</p>
+                <p>Shipping</p>
+                <p>Cancellation</p>
+                <p>Returns</p>
+                <p>FAQ</p>
+            </div>
+            <div class="footer-column">
+                <h3>CONSUMER POLICY</h3>
+                <p>Return Policy</p>
+                <p>Terms Of Use</p>
+                <p>Security</p>
+                <p>Privacy</p>
+                <p>Sitemap</p>
+            </div>
+            <div class="footer-column">
+                <h3>SOCIAL</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>YouTube</p>
+                <br>
+                <h3>Address</h3>
+                <p>Shopify Internet Private Ltd,</p>
+                <p>Maharastra, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shopify E-commerce | Made with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- html code file close  -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

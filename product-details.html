@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkar Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/###/files/favicon.png?v=your_version_here">
+
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="nav-bar">
+
+            <div class="menu-icon" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Sidebar Start -->
+            <div class="sidebar" id="sidebar">
+                <div class="top-bar">
+                    Login & Signup
+                    <span class="close-btn" onclick="toggleSidebar()">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+
+                <ul>
+                    <li>⭐ Flipkart Plus Zone</li>
+                    <li>📂 All Categories</li>
+                    <li>🔥 Offer Zone</li>
+                    <li>🛒 Sell on Flipkart</li>
+                    <li>📦 My Orders</li>
+                    <li>🛍 My Cart</li>
+                    <li>💖 My Wishlist</li>
+                    <li>👤 My Account</li>
+                    <li>🔔 My Notifications</li>
+                    <li>❓ Help Centre</li>
+                </ul>
+            </div>
+
+            <!-- Overlay -->
+            <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa fa-search "></i>
+                    <input type="search" name="search" placeholder="Search for product, Brands and More">
+                </div>
+            </div>
+
+            <div class="login-btn">
+                <a href="login-page.html">
+                    <div class="login-icon">
+                        <i class="fa fa-user-circle"></i>
+                        <span>Login</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="shopping-cart">
+                <div class="shopping-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+
+            <div class="material-store">
+                <i class="fa-solid fa-store"></i>
+                <span>Become a Seller</span>
+            </div>
+
+            <div class="helping-icon">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </div>
+    <!-- close the Nav-bar section  -->
+     
+        
+
+    <script src="script.js"></script>
+</body>
+
+</html>
